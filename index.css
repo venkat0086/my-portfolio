@@ -529,6 +529,10 @@ body:not(.user-is-tabbing) a:focus {
     padding: var(--gutter-normal);
   }
 
+  .client__logos:hover {
+    filter: invert(10%) grayscale(10%);
+  }
+
   .client__logo:not(:last-of-type) {
     margin-right: var(--gutter-medium);
   }
