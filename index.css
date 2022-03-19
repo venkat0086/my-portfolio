@@ -521,6 +521,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos:hover {
   filter: invert(10%) grayscale(10%);
+  cursor: pointer;
 }
 
 @media (max-width: 1240px) {
