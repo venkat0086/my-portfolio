@@ -511,27 +511,24 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
   display: flex;
   justify-content: space-between;
-  filter: invert(100%) grayscale(100%) opacity(0.8);
+  filter: invert(10%) grayscale(10%) opacity(0.8);
 }
 
 .client__logo {
   height: 6.5rem;
   max-width: 18rem;
+  /* display: block; */
+  width: 100%;
+  /* height: auto; */
 }
 
 .client__logos:hover {
-  filter: invert(10%) grayscale(10%);
   cursor: pointer;
 }
 
 @media (max-width: 1240px) {
   .client__logos {
-    overflow-x: scroll;
     padding: var(--gutter-normal);
-  }
-
-  .client__logos:hover {
-    filter: invert(10%) grayscale(10%);
   }
 
   .client__logo:not(:last-of-type) {
@@ -618,4 +615,49 @@ body:not(.user-is-tabbing) a:focus {
   .footer {
     padding: var(--gutter-medium) 0;
   }
+}
+
+.skill_contain {
+  position: relative;
+  width: 50%;
+}
+
+.skill_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.skill_overlay {
+  position: absolute;
+  bottom: 1;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 55%;
+  height: 50%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.skill_contain:hover .skill_overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.skill_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
