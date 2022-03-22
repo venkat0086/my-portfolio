@@ -516,7 +516,7 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
   display: flex;
   justify-content: space-between;
-  filter: invert(10%) grayscale(10%) opacity(0.8);
+  /* filter: invert(10%) grayscale(10%) opacity(0.8); */
 }
 
 .client__logo {
@@ -555,6 +555,16 @@ body:not(.user-is-tabbing) a:focus {
   .about__content {
     flex-direction: column-reverse;
     align-items: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  .client__logo {
+    height: 3.25rem;
+    max-width: 9rem;
+    /* display: block; */
+    width: 100%;
+    /* height: auto; */
   }
 }
 
