@@ -472,7 +472,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
 }
 
 .work__list {
