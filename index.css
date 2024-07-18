@@ -457,7 +457,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-  margin-bottom: 25rem;
+  margin-bottom: 12rem;
 }
 
 @media (max-width: 500px) {
@@ -494,6 +494,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
   margin-bottom: var(--gutter-normal);
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 901px) {
@@ -675,4 +677,25 @@ body:not(.user-is-tabbing) a:focus {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.carousel {
+  width: 45%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
 }
