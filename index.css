@@ -679,6 +679,12 @@ body:not(.user-is-tabbing) a:focus {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .skill_text {
+    font-size: 10px;
+  }
+}
+
 .carousel {
   width: 45%;
   overflow: hidden;
